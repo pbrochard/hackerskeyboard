@@ -1,9 +1,13 @@
 ## Purpose of this fork ##
 
-- This fork adds a layout to use colorForth under Qemu on Android.  
+This fork adds:
+
+- a layout to use colorForth under Qemu on Android.  
 See:
   * https://github.com/narke/colorForth
   * https://github.com/pbrochard/colorForth
+
+- left/right arrow keys in FR layout
 
 ## Overview ##
 
