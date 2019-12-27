@@ -68,7 +68,7 @@ public class InputLanguageSelection extends PreferenceActivity {
     // Run the GetLanguages.sh script to update the following lists based on
     // the available keyboard resources and dictionaries.
     private static final String[] KBD_LOCALIZATIONS = {
-        "ar", "bg", "bg_ST", "ca", "cs", "cs_QY", "da", "de", "de_NE",
+        "ar", "bg", "bg_ST", "ca", "cf", "cs", "cs_QY", "da", "de", "de_NE",
         "el", "en", "en_CX", "en_DV", "en_GB", "es", "es_LA", "es_US",
         "fa", "fi", "fr", "fr_CA", "he", "hr", "hu", "hu_QY", "hy", "in",
         "it", "iw", "ja", "ka", "ko", "lo", "lt", "lv", "nb", "nl", "pl",
@@ -85,7 +85,7 @@ public class InputLanguageSelection extends PreferenceActivity {
     };
 
     private static final String[] KBD_4_ROW = {
-        "ar", "bg", "bg_ST", "cs", "cs_QY", "da", "de", "de_NE", "el",
+        "ar", "bg", "bg_ST", "cs", "cf", "cs_QY", "da", "de", "de_NE", "el",
         "en", "en_CX", "en_DV", "es", "es_LA", "es_US", "fa", "fr", "fr_CA",
         "he", "hr", "hu", "hu_QY", "iw", "nb", "ru", "ru_PH", "sk", "sk_QY",
         "sl", "sr", "sv", "tr", "uk"
@@ -100,6 +100,8 @@ public class InputLanguageSelection extends PreferenceActivity {
                 return "English (4x11)";
         } else if (lang.equals("en") && country.equals("CX")) {
                 return "English (Carpalx)";
+		} else if (lang.equals("cf")) {
+                return "colorForth";
         } else if (lang.equals("es") && country.equals("LA")) {
             return "Español (Latinoamérica)";
         } else if (lang.equals("cs") && country.equals("QY")) {
